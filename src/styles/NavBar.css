@@ -1,0 +1,19 @@
+.nav-bar{
+    height: 30vh;
+    width: auto;
+    min-width: 375px;
+    margin-left: auto;
+
+    /* background-image: url("../../public/images/Kathari.png"); */
+    background-repeat: no-repeat;
+}
+.nav-bar img{
+    margin-top: 5vh;
+    margin-left: 25vw ;
+    width: auto;
+    height: 20vh;
+ 
+}
+
+
+/* 9F7D69 462220 515965 9E6F66 CAB6BA */

@@ -1,0 +1,62 @@
+.about-bar{
+    width: auto;
+    min-width: 375px;
+    height: 500px;
+    background-color: #9F7D69;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 4vh;
+    font-size: larger;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.images-container{  
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: auto;
+    padding-left: 20px;
+
+}
+.img-descriptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+}
+.img-descriptions div{
+    margin-right: 130px;
+
+} 
+/* .img-descriptions > div{
+    margin-right: 150px;
+
+}  */
+.middle-description{
+    margin-left: 2vw;
+}
+img{
+    margin-right: 60px;
+    width: 25vw;
+    height: 40vh;
+    max-width: 250px;
+}
+.norm-window{
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+
+}
+.upside-down-window{
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.book-description{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* na 820px izbacit aboutbar */
