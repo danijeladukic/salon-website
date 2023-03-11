@@ -1,6 +1,5 @@
 .about-bar{
-    width: auto;
-    min-width: 375px;
+    width: 100vw;  
     height: 500px;
     background-color: #9F7D69;
     display: flex;
