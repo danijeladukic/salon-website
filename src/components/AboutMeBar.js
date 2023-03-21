@@ -19,6 +19,7 @@ function AboutMeBar(){
             </div>
             <img className="me-img" src="..\images\result.png" alt='me-image'></img>
 
+
         </div>
 
     )

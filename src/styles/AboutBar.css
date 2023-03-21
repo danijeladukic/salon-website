@@ -1,23 +1,24 @@
 .about-bar{
     width: 100vw;  
-    height: 500px;
+    height: 400px;
     background-color: #9F7D69;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 4vh;
+    padding: 70px 30px;
+    margin-top: 50px;
     font-size: larger;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 .images-container{  
-    margin-top: 10vh;
-    margin-bottom: 0vh;
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-right: auto;
     padding-left: 20px;
+    margin-top:30px;
 
 }
 .img-descriptions{
@@ -54,7 +55,7 @@ img{
     border-bottom-right-radius: 40%;
 }
 .book-description{
-    margin-top: auto;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
 }

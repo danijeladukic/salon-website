@@ -1,0 +1,49 @@
+.mywork-bar{
+    background-color: #9E6F66;
+    height: 600px;
+    width: 100vw;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+
+    padding: 50px 100px;
+
+}
+.mywork-bar>img{
+    height: 600px;
+    margin-right:0px ;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+   
+}
+.photo-container{
+    width: 80vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    width: 200px;
+    height: 270px;    
+    margin: 15px;
+}
+
+.left-up{
+    border-top-left-radius: 40%;
+}
+.right-up{
+    border-top-right-radius: 40%;
+}
+.left-down{
+    border-bottom-left-radius: 40%;
+}
+.right-down{
+    border-bottom-right-radius: 40%;
+
+}
