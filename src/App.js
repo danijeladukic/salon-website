@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import AboutBar from "./components/AboutBar";
 import AboutMeBar from "./components/AboutMeBar";
 import MyWorkBar from "./components/MyWorkBar";
+import ServiceBar from "./components/ServiceBar";
 
 
 function App(){
@@ -13,6 +14,7 @@ function App(){
             <AboutBar></AboutBar>
             <AboutMeBar></AboutMeBar>
             <MyWorkBar></MyWorkBar>
+            <ServiceBar></ServiceBar>
 
         </div>
     )

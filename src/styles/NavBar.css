@@ -1,19 +1,90 @@
 .nav-bar{
     height: 200px;
-    width: auto;
+    width: 100%;
     min-width: 375px;
-    margin-left: auto;
-
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
     /* background-image: url("../../public/images/Kathari.png"); */
     background-repeat: no-repeat;
+    padding: 10px;
+    padding-bottom: 20px;
+
 }
-.nav-bar img{
-    margin-top: 5vh;
-    margin-left: 25vw ;
+/* .nav-bar img{
+    
     width: auto;
     height: 20vh;
  
+} */
+.logo{
+    min-width: 300px;
+}
+.icons-container{
+    width: 300px;
+    padding: 2px;
+
+  
+    margin-bottom: 2px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+.react-icon{
+    color: lightgray;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-top:2px;
+  }
+.phone{
+    width: 22px;
+    height: 22px;
+}
+.icons-container div{
+
+    min-width: 100px;
+    margin-right: 20px;
+    font-size: larger;
+ 
+    display: inline;
+    align-self: center;
+    /* display: none; */
+
 }
 
-
 /* 9F7D69 462220 515965 9E6F66 CAB6BA */
+
+@media screen and (max-width:480px) {
+    .nav-bar{
+        height: fit-content;
+        align-items: center;
+    }
+    .icons-container{
+        width: 200px;
+        height: 40px;
+        padding: 2px;
+        
+        margin-right: 50px;
+        margin-left: unset;
+        flex-direction: row;
+        justify-content: space-between;
+     
+    }
+    .icons-container div{
+        display: none;
+    }
+    .react-icon{
+        color: lightgray;
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+        margin-top:2px;
+      }
+   
+}

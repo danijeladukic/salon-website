@@ -1,47 +1,82 @@
 .about-bar{
-    width: 100vw;  
-    height: 400px;
+    width: 100%;  
+    height: 500px;
     background-color: #9F7D69;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 70px 30px;
-    margin-top: 50px;
     font-size: larger;
     font-family: 'Alegreya Sans SC', sans-serif;
+    padding-top: 30px;
 }
-.images-container{  
-   
+.container{  
+    min-width: 800px;
+   width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding-right: auto;
-    padding-left: 20px;
     margin-top:30px;
+    
 
 }
-.img-descriptions{
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+}
+
+@media screen and (max-width:720px) {
+    .container{  
+        min-width: unset;
+       width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        margin-top:30px;
+        
+    
+    }
+    .about-bar{
+        width: 100%;  
+        height: fit-content;
+        background-color: #9F7D69;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: larger;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width:480px) {
+    .abstract-img{
+        display: none;
+    }
+}
+
+
+/* .img-description{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
     
-}
-.img-descriptions div{
+}  */
+/* .img-descriptions div{
     margin-right: 130px;
 
-} 
+}  */
 /* .img-descriptions > div{
     margin-right: 150px;
 
 }  */
-.middle-description{
-    margin-left: 2vw;
-}
-img{
-    margin-right: 60px;
-    width: 25vw;
+
+.abstract-img{
+    width: 200px;
     height: 40vh;
     max-width: 250px;
 }
@@ -55,8 +90,6 @@ img{
     border-bottom-right-radius: 40%;
 }
 .book-description{
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
 }
 /* na 820px izbacit aboutbar */

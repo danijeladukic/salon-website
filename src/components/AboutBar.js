@@ -8,25 +8,23 @@ function AboutBar(){
                  and what are you searching for?
             </div>
 
-            <div className="images-container">
-                <img className="norm-window" src="../../images/weddnails.jpg" alt="first-pic"></img>
-                <img className="upside-down-window" src='../images/lepardnails.jpg' alt="second-pic"></img>
-                <img className="norm-window" src="../images/freshnails.jpg" alt="third-pic"></img>
+            <div className="container">
+                <div className="image-container">
+                  <img className="abstract-img norm-window" src="../../images/weddnails.jpg" alt="first-pic"></img>
+                  <div className="img-description">Special event nails</div>
+                </div>
+                <div className="image-container">
+                    <img className="abstract-img upside-down-window" src='../images/lepardnails.jpg' alt="second-pic"></img>
+                    <div className="img-description">to spice up your everyday nails?</div>
+                    
+                </div>
+                <div className="image-container">
+                    <img className="abstract-img upside-down-window" src='../images/freshnails.jpg' alt="third-pic"></img>
+                    <div className="img-description">Or just a fresh manicure?</div>   
+                </div>
             </div>
 
-        <div className="img-descriptions">
-            <div>
-                A special event nails?
-            </div>
-            <div className="middle-description"> 
-                Spice up your everyday nails?
-            </div>
-            <div>
-                Or just a fresh manicure?
-            </div>
-        </div>
-
-        <div className="book-description">Book an appointment with me!</div>
+            <button className="book-description">BOOK WITH ME</button>
         </div>
         
 
