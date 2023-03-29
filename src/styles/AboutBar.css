@@ -1,7 +1,6 @@
 .about-bar{
     width: 100%;  
-    height: 500px;
-    background-color: #9F7D69;
+    background:linear-gradient(90deg,#f5d9c3 20%,#ac8f7f 40% 50%, #e9d8c4 77% 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +41,7 @@
     .about-bar{
         width: 100%;  
         height: fit-content;
-        background-color: #9F7D69;
+        background:linear-gradient(180deg,#f5d9c3 25%,#ac8f7f 35% 55%, #e9d8c4 70% 100%);
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -3,8 +3,7 @@
     height:300px;
     font-size: larger;
     font-family: 'Alegreya Sans SC', sans-serif;
-    
-    background-color: #CAB6BA;
+    background-color: #dbc9b4;
     padding: 32px 10px;
     display: flex;
     flex-direction: column;
@@ -13,6 +12,7 @@
     
 }
 .about-container{
+    min-width: 310px;
     width: 50vw;
     height: fit-content;
     display: flex;
@@ -39,8 +39,9 @@
    
     /* kad se smanji dovoljno ova slika nestane */
 }
-/* @media screen and (max-width:480px) {
+ @media screen and (max-width:480px) {
     .me-img{
+        padding: 10px;
         min-width: 200px;
         margin-right: 15vw;
         margin-top: 0px;
@@ -48,7 +49,35 @@
         top: 875px;
         left: 60vw;
         display:none;
+        
+    }
+    .about-me-bar{
+        width: 100%;
+        height:320px;
+        font-size: larger;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        
+        background-color: #CAB6BA;
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        text-align: center;
+        
     }
 }
- */
+@media screen and (max-width:980px) {
+    .me-img{
+        padding: 10px;
+        min-width: 200px;
+        margin-right: 15vw;
+        margin-top: 0px;
+        position: absolute;
+        top: 875px;
+        left: 60vw;
+        display:none;
+        
+    }
+}
 

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 
-
 const ImageSlider= ({slides})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -16,7 +15,8 @@ const ImageSlider= ({slides})=>{
     }
     const sliderStyles ={
         height:'100%',
-        position:'relative'//because of arrows
+        position:'relative'//because of arrows,
+        
     }
     const leftArrowStyle={
         position:'absolute',
@@ -79,10 +79,6 @@ const ImageSlider= ({slides})=>{
                     
                 ))}
             </div>
-
-
-                
-            
         </div>
 
 
