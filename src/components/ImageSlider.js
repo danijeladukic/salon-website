@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 
 const ImageSlider= ({slides})=>{
+    const timerRef = useRef(null)
+
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const slideStyles={
@@ -43,11 +45,12 @@ const ImageSlider= ({slides})=>{
         const newIndex = isFirstSlide ? slides.length - 1 : currentIndex-1
         setCurrentIndex(newIndex)
     }
-    const goToNext = () =>{
+    const goToNext =  useCallback(()=>{
         const isLastSlide = currentIndex === slides.length-1
         const newIndex = isLastSlide ? 0 : currentIndex+1
+
         setCurrentIndex(newIndex)
-    }
+    },[currentIndex, slides])
 
     const dotsContainerStyles={
         display:'flex',
@@ -65,6 +68,28 @@ const ImageSlider= ({slides})=>{
     const goToSlide = (slideIndex)=>{
         setCurrentIndex(slideIndex)
     }
+    const slideStylesWidthBackground = {
+        ...slideStyles,
+        backgroundImage: `url(${slides[currentIndex].url})`
+    }
+
+    useEffect(()=>{
+        if(timerRef.current){             //IF WE CLICK ARROWS IT CLEARS TIMER ID
+            clearTimeout(timerRef.current);
+
+        }
+        timerRef.current = setTimeout(()=>{//slides automatically every 2 sec
+            goToNext();
+            console.log('use effect')
+            
+
+        },2000)
+
+        return () => clearTimeout(timerRef.current) //if component is destroyed, we destroy setTimeout
+    }, [goToNext] )
+
+
+
     return(
         <div style={sliderStyles}>
             <div style={leftArrowStyle} onClick={goToPrevious}>◁</div>

@@ -4,8 +4,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #897d7d;
-    color: white;
+    background-color: #efe6da;
+    
+    color: black;
     align-items: center;
     padding: 20px;
     /* padding:30px 20vw 30px 20vw; */
@@ -21,7 +22,7 @@
     height: 30px;
     min-width: 200px;
     
-    border-top: solid 1px lightgray;
+    border-top: solid 1px rgb(59, 59, 59);
     padding: 10px;
     padding-bottom: 0px;
    
@@ -47,8 +48,12 @@ button{
    align-self: center;
    /* margin-left: 20vw;*/
    margin-top: 30px;
+}
 
-
+@media screen and (max-width:720px){
+  .service-bar{
+    background: linear-gradient(180deg, #ac8f7f, white);
+  }
 }
 
 
