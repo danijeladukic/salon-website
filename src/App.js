@@ -5,9 +5,12 @@ import AboutBar from "./components/AboutBar";
 import AboutMeBar from "./components/AboutMeBar";
 import MyWorkBar from "./components/MyWorkBar";
 import ServiceBar from "./components/ServiceBar";
+import { useState } from "react";
 
 
 function App(){
+    const [show, setShow] = useState(false)
+
     return(
         <div className="App">
             <NavBar></NavBar>

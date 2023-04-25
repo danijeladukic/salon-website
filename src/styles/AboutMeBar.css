@@ -41,6 +41,7 @@
    
     /* kad se smanji dovoljno ova slika nestane */
 }
+
 @media screen and (max-width:1300px) {
     .me-img{
     
@@ -94,7 +95,7 @@
     }
     .about-me-bar{
         width: 100%;
-        height:300px;
+        height:301px;
         font-size: larger;
         font-family: 'Alegreya Sans SC', sans-serif;
         

@@ -13,6 +13,34 @@
     padding-bottom: 20px;
 
 }
+.react-icon:hover{
+    transform: scale(1.5);
+}
+button:hover{
+    transition: ease-out 0.4s;
+    transform: scale(1.1);
+    
+}
+.number{
+    background-color: rgb(249, 247, 247);
+    border-radius: 3px;
+    animation: show-itself 2s forwards;
+    
+}
+/* .icons-container:hover .number{
+    animation: infinite show-itself 3s forwards;
+} */
+@keyframes show-itself{
+    0%{
+        opacity: 0%;
+        transform: translateX(40%);
+    }
+    
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
 /* .nav-bar img{
     
     width: auto;

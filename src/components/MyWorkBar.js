@@ -15,13 +15,24 @@ function MyWorkBar(){
     const containerStyle ={
             width: '700px',
             height: '480px',
-            margin:'0 auto'
+            
     }
+    // const togglePhotoSize= (event) =>(
+    //     console.log(event.target)
+
+    // )
+    // const Photos = document.getElementsByClassName('photo')
+    // alert(Photos.length)
     
+    // Photos.forEach(element => {
+    //     element.addEventListener('click',console.log('click'))
+    // });
+    
+   
     return(<div className="mywork-bar-container">
             <div className="mywork-bar">
                 <div style={containerStyle}>
-                    <ImageSlider className="image-slider" slides={slides}>
+                    <ImageSlider className="image-slider" slides={slides} parentWidth={500}>
                     
                     </ImageSlider>
                 </div>
@@ -30,7 +41,7 @@ function MyWorkBar(){
             <div className="mywork-bar-2">
                 <div className="main-container">
                     <div className="photo-container">
-                    <img className="photo right-up" src="../../images/photo1.jpg" alt="photo"></img> 
+                    <img className="photo right-up" src="../../images/photo1.jpg" alt="photo" ></img> 
                     <img className="photo right-down" src="../../images/photo2.jpg" alt="photo"></img> 
                     <img className="photo left-down" src="../../images/photo3.jpg" alt="photo"></img> 
                     <img className="photo right-down" src="../../images/photo4.jpg" alt="photo"></img>
